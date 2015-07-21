@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+.LeftPane {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  height: 600px;
+  width: 800px;
+}
+
+.RightPane {
+  float: left;
+  height: 400px;
+  margin-top: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+.Door {
+  display: flex;
+  height: 240px;
+  width: 180px;
+}
+
+.Door-left,
+.Door-right,
+.Door-placeholder {
+  background-image: url("sprites.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 240px;
+}
+
+.Door-left {
+  width: 120px;
+  z-index: 3;
+}
+.Door-right {
+  width: 60px;
+  z-index: 1;
+}
+.Door-placeholder {
+  margin-left: -50px;
+  position: absolute;
+  z-index: 2;
+}
+
+.Door--closed .Door-left {
+  background-position: 0 0;
+}
+.Door--closed .Door-right {
+  background-position: -120px 0;
+}
+
+.Door--open {
+  cursor: pointer;
+}
+.Door--open .Door-left {
+  background-position: -180px 0;
+}
+.Door--open .Door-right {
+  background-position: -300px 0;
+}
+
+.Door--open.Door--salamWantsIn .Door-placeholder {
+  background-position: -350px 0;
+  width: 100px;
+}
+
+.Door--closed.Door--salamIsIn .Door-placeholder {
+  background-position: -350px 0;
+  width: 100px;
+  z-index: 4;
+}
