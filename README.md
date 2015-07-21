@@ -15,7 +15,7 @@ The Game
 Requirements
 ------------
 
-Implement the following missing game feature: If the user clicks an open door, the door will close, preventing Salam from getting in. Note that it shouldn’t matter if Salam is already on the door step or not.
+Implement the following missing game feature: If the user clicks an open door, the door will close, preventing Salam from getting in. Note that it shouldn’t matter if Salam is already on the doorstep or not.
 
 #### For bonus points:
 
