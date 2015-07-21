@@ -20,5 +20,4 @@ Implement the following missing game feature: If the user clicks an open door, t
 #### For bonus points:
 
 1. Make it so that once a door has been closed by the user, Salam will be able to attempt entering it in the future. Numberless times.
-
 * Count how many times Salam is denied, and display that number, in real time, as a score.
